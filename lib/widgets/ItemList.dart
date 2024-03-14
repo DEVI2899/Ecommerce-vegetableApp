@@ -25,6 +25,7 @@ class ItemList extends StatelessWidget {
                 title,
                 style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Appcolors.TitleColor),
               ),
+
               InkWell(
                 onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=> ProductList()));

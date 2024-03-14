@@ -33,11 +33,13 @@ class _CountControllerState extends State<CountController> {
           IconButton(
           onPressed: () => context.read<CounterBloc>().add(Increment()),
               icon: const Icon(Icons.add, color: Appcolors.shadowcolor,)),
+
           BlocBuilder<CounterBloc, int>(
               builder:(context, count){
                 return Text('$count',
                   style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black), );
               } ),
+
           IconButton(
               onPressed: () => context.read<CounterBloc>().add(Decrement()),
               icon: const Icon(Icons.remove, color: Appcolors.shadowcolor,))

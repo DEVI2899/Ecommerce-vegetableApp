@@ -54,6 +54,7 @@ class ItemCard extends StatelessWidget {
                 const SizedBox(
                   width: 4,
                 ),
+
                 Expanded(
                   child: Text(
                     item.sellingUnit,
